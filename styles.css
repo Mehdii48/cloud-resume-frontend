@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.cv {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1.05rem;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #2b6cb0;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+.skills li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.skills li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2b6cb0;
+}
+
+.job {
+  margin-bottom: 18px;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+  color: #555;
+}

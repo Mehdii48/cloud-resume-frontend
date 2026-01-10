@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehdi Bedhri | CV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="cv">
+
+    <header class="header">
+      <h1>Mehdi Bedhri</h1>
+      <p class="subtitle">
+        Estudiante proactivo de Administración de Sistemas Informáticos en Red,
+        apasionado por la tecnología.
+      </p>
+    </header>
+
+    <section>
+      <h2>Contacto</h2>
+      <p><strong>Teléfono:</strong> +34 123 456 789</p>
+      <p><strong>Email:</strong> mehdixxxx@gmail.com</p>
+    </section>
+
+    <section>
+      <h2>Formación Académica</h2>
+      <ul>
+        <li><strong>Bachillerato en Ciencias Físicas</strong></li>
+        <li><strong>ASIR</strong> – ITIC BCN <span class="date">(2024 - Actualidad)</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <ul class="skills">
+        <li>Gestión de activos</li>
+        <li>Resolución de problemas</li>
+        <li>Trabajo en equipo</li>
+        <li>Comunicación asertiva</li>
+        <li>Redes Cisco, administración de servidores, bases de datos, Python, HTML, XML, seguridad informática</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Árabe: nativo</li>
+        <li>Francés: nativo</li>
+        <li>Inglés: intermedio B2</li>
+        <li>Español: intermedio B2</li>
+        <li>Catalán: básico A1</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experiencia Laboral</h2>
+
+      <div class="job">
+        <h3>Recepcionista — NASA</h3>
+        <span class="date">10 meses</span>
+        <ul>
+          <li>Atención a clientes</li>
+          <li>Manejo de llamadas</li>
+          <li>Gestión administrativa</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Gerente de Ventas — Leroy Merlin</h3>
+        <span class="date">5 meses</span>
+        <ul>
+          <li>Planificación de entregas y optimización de rutas</li>
+          <li>Gestión de pedidos y coordinación logística</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Contador de visitas (para el challenge) -->
+    <footer class="footer">
+      <p id="counter">Visitas: ...</p>
+    </footer>
+
+  </main>
+
+  <!-- JavaScript contador -->
+  <script>
+    fetch("API_URL_AQUI")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("counter").innerText =
+          "Visitas: " + data.count;
+      })
+      .catch(() => {
+        document.getElementById("counter").innerText =
+          "Visitas: -";
+      });
+  </script>
+
+</body>
+</html>
