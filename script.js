@@ -2,7 +2,7 @@
 document.getElementById("counter").innerText = "loading...";
 
 // Llamada a tu API Gateway
-fetch("https://56spe8rw4a.execute-api.us-east-1.amazonaws.com/prod/count")
+fetch("https://5iohpvqsgvcmxuoahimsislpru0ziuge.lambda-url.us-east-1.on.aws/")
   .then(response => response.json())
   .then(data => {
     // Aquí actualizamos el contador con el valor real
